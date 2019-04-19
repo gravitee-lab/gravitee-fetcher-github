@@ -63,7 +63,7 @@ public class GitHubFetcher_FetchTest {
         config.setOwner("owner");
         config.setRepository("myrepo");
         config.setFilepath("/path/to/file");
-        config.setGithubUrl("http://localhost:" + wireMockRule.port());
+        config.setGithubUrl(wireMockRule.baseUrl());
         config.setBranchOrTag("sha1");
         ReflectionTestUtils.setField(fetcher, "gitHubFetcherConfiguration", config);
         ReflectionTestUtils.setField(fetcher, "httpClientTimeout", 1_000);
@@ -82,7 +82,7 @@ public class GitHubFetcher_FetchTest {
         config.setOwner("owner");
         config.setRepository("myrepo");
         config.setFilepath("/path/to/file");
-        config.setGithubUrl("http://localhost:" + wireMockRule.port());
+        config.setGithubUrl(wireMockRule.baseUrl());
         config.setBranchOrTag("sha1");
         ReflectionTestUtils.setField(fetcher, "gitHubFetcherConfiguration", config);
         ReflectionTestUtils.setField(fetcher, "httpClientTimeout", 1_000);
@@ -101,7 +101,7 @@ public class GitHubFetcher_FetchTest {
         config.setOwner("owner");
         config.setRepository("myrepo");
         config.setFilepath("/path/to/file");
-        config.setGithubUrl("http://localhost:" + wireMockRule.port());
+        config.setGithubUrl(wireMockRule.baseUrl());
         config.setBranchOrTag("sha1");
         ReflectionTestUtils.setField(fetcher, "gitHubFetcherConfiguration", config);
 
@@ -123,7 +123,7 @@ public class GitHubFetcher_FetchTest {
         config.setOwner("owner");
         config.setRepository("myrepo");
         config.setFilepath("/path/to/file");
-        config.setGithubUrl("http://localhost:" + wireMockRule.port());
+        config.setGithubUrl(wireMockRule.baseUrl());
         config.setBranchOrTag("sha1");
         ReflectionTestUtils.setField(fetcher, "gitHubFetcherConfiguration", config);
         ReflectionTestUtils.setField(fetcher, "httpClientTimeout", 1_000);
@@ -150,7 +150,7 @@ public class GitHubFetcher_FetchTest {
         config.setOwner("owner");
         config.setRepository("myrepo");
         config.setFilepath("/path/to/file");
-        config.setGithubUrl("http://localhost:" + wireMockRule.port());
+        config.setGithubUrl(wireMockRule.baseUrl());
         config.setBranchOrTag("sha1");
         ReflectionTestUtils.setField(fetcher, "gitHubFetcherConfiguration", config);
 
